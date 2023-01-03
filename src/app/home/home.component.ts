@@ -12,7 +12,6 @@ export class HomeComponent implements OnInit {
   constructor(private fb:FormBuilder) {
 
    }
-
   ngOnInit(): void {
     this.submitForm=this.fb.group({
       name:[null,[Validators.required]],
