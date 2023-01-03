@@ -1,0 +1,14 @@
+        
+<ngb-carousel *ngIf="event_list.length" #carousel [interval]="5000">
+  <ng-container *ngFor="let list of event_list;let i=index">
+      <ng-template ngbSlide id="slide_{{i}}">
+        <div class="picsum-img-wrapper">
+        <img [src]="list?.img" alt="">
+        </div>
+        <div class="carousel-caption">
+        <h3 class="mb-0">{{list?.event}}</h3>
+        <p class="mb-0">{{list?.eventDescription}}</p>
+        </div>
+    </ng-template>
+  </ng-container>
+</ngb-carousel>

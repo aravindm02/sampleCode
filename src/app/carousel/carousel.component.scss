@@ -1,0 +1,31 @@
+// ngb-carousel
+ngb-carousel .picsum-img-wrapper {
+    //position: relative;
+    height: 0;
+    padding-top: 25%; /* Keep ratio for 900x500 images */
+  }
+ngb-carousel .picsum-img-wrapper>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+  }
+  
+.carousel-caption{
+    z-index: 99;
+    background: url(http://www.pickyourtrip.com/wp-content/plugins/cyclone-slider/templates/responsive/images/bg-caption.png);
+    padding: 12px;
+    text-align:start ;
+}
+::ng-deep .carousel .sr-only, ::ng-deep .carousel .sr-only {
+   display: none;
+  }
+::ng-deep .carousel .carousel-control-prev-icon, ::ng-deep .carousel .carousel-control-next-icon {
+    background-color: #000;
+    width: 50px;
+    height: 50px;
+    background-size: 41%;
+    border-radius: 50%;
+  }
